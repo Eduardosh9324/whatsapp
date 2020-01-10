@@ -1,0 +1,59 @@
+.head1{
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F1F0;
+    align-items: center;
+    border: 2px solid black;
+}
+.iconos{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    border-right: 1px solid gray;
+    height: 15%;
+}
+.circle{
+    margin:0px 10px 0px 10px;
+}
+.dialogo{
+    margin:0px 10px 0px 10px;
+}
+.trespuntos1{
+    margin:0px 10px 0px 10px;
+}
+
+.foto{
+    margin-left: 10px;
+    width: 20%;
+    height: 15%;
+    border-radius: 50px;
+}
+.complemento{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    height: 15%;
+}
+.foto-grupo{
+width: 80%;
+margin-left: 15px;
+}
+.buscador{
+width: 7%;
+}
+.adjuntar{
+    width: 7%;
+}
+.trespuntos2{
+    width: 7%;
+}
+.contactos{
+    display: block;
+    overflow-y: scroll;
+    width: 40%;
+}
+.contactos div{
+    height: 60px;
+}
