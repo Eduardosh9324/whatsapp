@@ -1,30 +1,124 @@
 #page {
     display: grid;
     width: 100%;
-    height: 250px;
-    grid-template-areas: "head head"
-                         "nav  main"
-                         "nav  foot";
-    grid-template-columns: 150px 1fr;
-    grid-template-rows: 50px 470px 60px;
+    height: 100%;
+    grid-template-areas: "fot   Ico  fott Icoo"
+                         "find  find Cont Cont"
+                         "Nav   Nav  Cont Cont"
+                         "Nav   Nav  Env  Env";
+
+    grid-template-columns: 5fr 3fr 9fr 3fr;
+    grid-template-rows: 50px 50px 385px 60px;
     
   }
-  
-  #page > header {
-    grid-area: head;
+  /*Estilos en general a toda la estructura*/
+  #page .fot1{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    grid-area: fot;
     background-color: #F6F1F0;
   }
-  
-  #page > nav {
-    grid-area: nav;
+  #page .Ico1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: Ico;
+    background-color: #F6F1F0;
+    border-right: 1px solid lightgrey;
   }
-  
-  #page > main {
-    grid-area: main;
-    background-color: #cececa;
+  #page .fot2{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    grid-area: fott;
+    background-color: #F6F1F0;
   }
-  
-  #page > footer {
-    grid-area: foot;
-    background-color: #ddf0d8;
+  #page .Ico2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: Icoo;
+    background-color: #F6F1F0;
   }
+  #page .find{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: find;
+    background-color: rgb(235, 229, 227);
+  }
+  #page .Nav{
+    grid-area: Nav;
+  }
+  #page .Cont{
+    grid-area: Cont;
+    background-image: url(C:/Users/MB96084/Documents/whatsapp/img/fondocontenido.png);
+  }
+  #page .Env{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: Env;
+    background-color:  #f0f0f0;
+  }
+  img{
+    border-radius: 50%;
+  }
+  /*Estilo al navegador de los contactos*/
+
+  .Nav{
+    width: 100%;
+    height: 446px;
+  }
+  .contactosnavegador >a> div{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #ece9e9;
+  }
+  .perfil{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    width: 10%;
+  }
+  .resumen{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 90%;
+  }
+  .resumen > div{
+    display: flex;
+  }
+  .text1{
+    font-weight: bold;
+    width: 70%;
+    
+  }
+ .hora{
+   width: 30%;
+   text-align: right;
+ }
+ .text2>acronym{
+   text-decoration: none;
+ }
+ .contactosnavegador> a{
+   text-decoration: none;
+   color: black;
+ }
+  /*Estilos a elementos de linea y otros en particular*/
+  .fot2 a img{
+    margin-right: 10px;
+  }
+  .barrafind{
+    width: 80%;
+  }
+  .barraenv{
+    border-radius: 30px;
+    height: 50% ;
+    width: 80%;
+  }
+ 
+  
